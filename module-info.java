@@ -1,3 +1,3 @@
-module survivorfx {
+module physicsfx {
 	requires javafx.graphics;
 }
