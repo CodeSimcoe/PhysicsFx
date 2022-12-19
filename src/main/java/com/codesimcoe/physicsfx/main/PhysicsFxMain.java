@@ -44,7 +44,8 @@ public class PhysicsFxMain extends Application {
         double fps = 30;
         double frameDurationMs = 1000 / fps;
 
-        Animation loop = new Timeline(new KeyFrame(Duration.millis(frameDurationMs), update));
+        Duration duration = Duration.millis(frameDurationMs);
+        Animation loop = new Timeline(new KeyFrame(duration, update));
         loop.setCycleCount(Animation.INDEFINITE);
         loop.play();
 
